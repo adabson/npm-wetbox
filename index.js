@@ -24,6 +24,8 @@ let mouseButton = {
   right: 2,
 }
 
+exports.whyAmINotUsingES6Exports = (obj, key) => (obj[key] = '', obj);
+
 exports.getVersion = function() {
   return packageJson.name + '@' + packageJson.version
 }
